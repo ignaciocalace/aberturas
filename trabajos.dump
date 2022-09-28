@@ -1,0 +1,52 @@
+-- MySQL dump 10.13  Distrib 8.0.18, for Win64 (x86_64)
+--
+-- Host: localhost    Database: trabajos
+-- ------------------------------------------------------
+-- Server version	5.7.24
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `jobs`
+--
+
+DROP TABLE IF EXISTS `jobs`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `jobs` (
+  `id_job` int(11) NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(60) DEFAULT NULL,
+  `descripcion` longtext,
+  `info` varchar(45) DEFAULT NULL,
+  `foto1` varchar(45) DEFAULT NULL,
+  `foto2` varchar(45) DEFAULT NULL,
+  `foto3` varchar(45) DEFAULT NULL,
+  `foto4` varchar(45) DEFAULT NULL,
+  `foto5` varchar(45) DEFAULT NULL,
+  `foto6` varchar(45) DEFAULT NULL,
+  `foto7` varchar(45) DEFAULT NULL,
+  `foto8` varchar(45) DEFAULT NULL,
+  `foto9` varchar(45) DEFAULT NULL,
+  `foto10` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id_job`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `jobs`
+--
+
+LOCK TABLES `jobs` WRITE;
+/*!40000 ALTER TABLE `jobs` DISABLE KEYS */;
+INSERT INTO `jobs` VALUES (1,'Cerramiento en Santa Ana','Cerramientos de barbacoa completa, con cierres lara en todas las puertas corredizas. ','Modena','DSC_8229','DSC_8234','DSC_8231','DSC_8230','DSC_8236','DSC_8241','DSC_8242','DSC_8245','DSC_8246','DSC_8237'),(2,'Cerramiento en Parque Miramar',NULL,'Serie 30','DSC_8214','DSC_8225','DSC_8222','DSC_8217',NULL,NULL,NULL,NULL,NULL,NULL),(3,'Cerramiento en Santa Ana',NULL,'Modena','DSC_8249','DSC_8252','DSC_8261','DSC_8266','DSC_8267','DSC_8269','DSC_8270','DSC_8272','DSC_8273','DSC_8274');
+/*!40000 ALTER TABLE `jobs` ENABLE KEYS */;
+UNLOCK TABLES;

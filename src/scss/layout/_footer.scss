@@ -1,0 +1,27 @@
+.footer {
+    background-color: $grisOscuro;
+    padding: 3rem 0 1rem 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    .navegacion {
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+    }
+    .contenedor-footer {
+        padding-top: calc($separacion / 2);
+    }
+    .copyright {
+        font-size: 1.4rem;
+        padding-bottom: 0;
+        color: $blanco;
+        text-align: center;
+    }
+
+    .Aphlix {
+        font-size: 1.2rem;
+        padding-bottom: 0;
+        color: $blanco;
+        text-align: center;
+    }
+}

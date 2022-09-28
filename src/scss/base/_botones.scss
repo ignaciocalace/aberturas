@@ -1,0 +1,62 @@
+.boton-amarillo-block {
+    @include boton($amarillo, block);
+    margin-bottom: 1.5rem;
+}
+
+.boton-amarillo {
+    @include boton($amarillo, inline-block);
+ 
+}
+
+.boton-verde {
+    @include boton($verde, inline-block);
+    margin: 0 1.5rem;
+}
+
+.animado {
+    span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+    span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+    &:hover span {
+        padding-right: 25px;
+    }
+    &:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+}
+
+.animado-i {
+    span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+    span::before {
+        content: '\00ab';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: - 20px;
+        transition: 0.5s;
+    }
+    &:hover span {
+        padding-left: 25px;
+    }
+    &:hover span::before {
+        opacity: 1;
+        left: 0;
+    }
+}

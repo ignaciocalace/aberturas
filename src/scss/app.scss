@@ -1,0 +1,21 @@
+@import "base/normalize";
+@import "base/variables";
+@import "base/globales";
+@import "base/mixins";
+@import "base/utilidades";
+@import "base/botones";
+
+/** UI **/
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navegacion";
+@import "layout/info";
+@import "layout/iconos";
+@import "layout/trabajos";
+@import "layout/contactar";
+@import "layout/formulario";
+
+/** Internas **/
+
+@import "layout/nosotros";

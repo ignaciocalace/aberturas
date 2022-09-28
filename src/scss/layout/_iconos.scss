@@ -1,0 +1,41 @@
+.iconos-nosotros {
+  @include tablet {
+    @include grid(3, 1rem);
+  }
+}
+
+.iconos-contacto {
+    @include tablet {
+      @include grid(3, 2rem);
+      justify-content: space-between;
+      img {
+          height: 12rem}
+    }
+    @include minimo {
+      img {
+          height: 10rem}
+    }
+  }
+
+.icono {
+  //margin: 0 rem 2rem 2rem 0;
+  text-align: center;
+  img {
+    height: 10rem;
+    margin-top: 2rem;
+  }
+  h3 {
+    margin: 1.5rem 0;
+  }
+  p {
+    margin: 0 0 1.5rem 0;
+  }
+}
+
+.icono-contacto {
+  text-align: center;
+  img {
+    // height: 12rem;
+    margin-top: 2rem;
+  }
+}

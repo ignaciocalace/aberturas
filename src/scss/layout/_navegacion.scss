@@ -1,0 +1,62 @@
+    .barra {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3rem;
+        @include tablet {
+            flex-direction: row;
+            justify-content: space-between;
+            //align-items: flex-end;
+        }
+        a {
+            img,
+            picture {
+                margin-bottom: 2rem;
+                @include tablet {
+                    margin-bottom: 0rem;
+                }
+            }
+        }
+    }
+    
+    .navegacion {
+        display: none;
+        @include tablet {
+            display: flex;
+            align-items: center;
+        }
+        a {
+            color: $blanco;
+            text-decoration: none;
+            font-size: 2.2rem;
+            display: block;
+            text-align: center;
+            @include tablet {
+                margin-right: 1.5rem;
+                font-size: 1.8rem;
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+            &:hover {
+                color: $verde;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    .animacion-menu {
+        @include tablet {
+            display: none;
+        }
+        img {
+            width: 5rem;
+        }
+    }
+    
+    .mostrar {
+        display: block;
+        @include tablet {
+            display: flex;
+        }
+    }

@@ -1,0 +1,26 @@
+.webp .imagen-contacto {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), url(../../build/img/mail2.webp);
+}
+
+.no-webp .imagen-contacto {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), url(../../build/img/mail2.jpg);
+}
+
+.imagen-contacto {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $separacion 0 0 0;
+    h2 {
+        font-weight: $bold;
+    }
+    p {
+        font-weight: $regular;
+        text-align: center;
+    }
+}
